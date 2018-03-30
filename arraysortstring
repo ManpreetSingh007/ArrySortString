@@ -1,0 +1,25 @@
+import java.util.Arrays;
+ 
+public class arraysortstring 
+{
+    // Method to sort a string alphabetically
+    public static String sortString(String inputString)
+    {
+        // convert input string to char array
+        char tempArray[] = inputString.toCharArray();
+         
+        Arrays.sort(tempArray);
+         
+        // return new sorted string
+        return new String(tempArray);
+    }
+     
+    public static void main(String[] args)
+    {
+        String inputString = "Manpreet";
+        String outputString = sortString(inputString);
+         
+        System.out.println("Input String : " + inputString);
+        System.out.println("Output String : " + outputString);
+    }
+}
